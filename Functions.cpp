@@ -27,21 +27,21 @@ std::vector<std::unique_ptr<Smalltalk>> getPeople(int numBrit, int numAmerican,
 
 	//add brits to vector
 	for (int i = 0; i < numBrit; i++) {
-		vect.push_back(std::unique_ptr<Smalltalk>(new Smalltalk(BRIT, i)));
-		vect.emplace_back(new Smalltalk(BRIT, i));
+		vect.push_back(std::unique_ptr<Smalltalk>(new Smalltalk_Brit(i)));
+		vect.emplace_back(new Smalltalk_Brit(i));
 	}
 
 	//add americans  to vector
 	for (int i = 0; i < numAmerican; i++) {
-		vect.push_back(std::unique_ptr<Smalltalk>(new Smalltalk(AMERICAN, i)));
-		vect.emplace_back(new Smalltalk(AMERICAN, i));
+		vect.push_back(std::unique_ptr<Smalltalk>(new Smalltalk_American(i)));
+		vect.emplace_back(new Smalltalk_American(i));
 	}
 
 	//add american donut enthusiest  to vector
 	for (int i = 0; i < numbAmericanDonutEnthusiest; i++) {
 		vect.push_back(
-				std::unique_ptr<Smalltalk>(new Smalltalk(AMERICAN_DE, i)));
-		vect.emplace_back(new Smalltalk(AMERICAN_DE, i));
+				std::unique_ptr<Smalltalk>(new ST_American_DonutEnthusiest(i)));
+		vect.emplace_back(new ST_American_DonutEnthusiest(i));
 	}
 
 	//create some watches (as long as number watches <= numb people)
