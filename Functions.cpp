@@ -7,7 +7,7 @@
  */
 #include <iostream>
 #include <memory>
-
+#include <string>
 #include "./includes/Functions.h"
 #include "./includes/Smalltalk_American.h"
 #include "./includes/ST_American_DonutEnthusiest.h"
@@ -50,7 +50,8 @@ std::vector<std::unique_ptr<Smalltalk>> getPeople(int numBrit, int numAmerican,
 	//from this function(see Smalltalk header for hints)
 	if (numWatches <= numBrit + numAmerican) {
 		for (int i = 0; i < numWatches; i++) {
-			//TODO Give watches to ppl
+			std::unique_ptr<Watch >pWatch(new Watch());
+			vect.at(i)->giveWatch(pWatch);
 		}
 	}
 
