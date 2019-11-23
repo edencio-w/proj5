@@ -13,7 +13,7 @@ ST_American_DonutEnthusiest::ST_American_DonutEnthusiest(int i /*=1*/) :
 	populatePhrases();
 }
 ST_American_DonutEnthusiest::~ST_American_DonutEnthusiest(void) {
-	populatePhrases();
+
 }
 void ST_American_DonutEnthusiest::populatePhrases() {
 	mySmallTalk.push_back(AMERICAN_DE_PHRASE_1);

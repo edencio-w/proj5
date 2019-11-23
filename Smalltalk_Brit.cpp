@@ -14,7 +14,6 @@ Smalltalk_Brit::Smalltalk_Brit(int iPerson/*=1*/) :
 	populatePhrases();
 }
 Smalltalk_Brit::~Smalltalk_Brit(void) {
-	populatePhrases();
 }
 void Smalltalk_Brit::populatePhrases() {
 	mySmallTalk.push_back(BRIT_1);
